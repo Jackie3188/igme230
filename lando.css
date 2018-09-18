@@ -1,5 +1,9 @@
 /* css page */
 
+*{
+    box-sizing: border-box;
+}
+
 body{
 
     /* Photo by Joanna Kosinska on Unsplash */
@@ -66,27 +70,38 @@ div.under{
         
     }
 
-    button{
+    #exercises{
+       
+        /* background-color: aqua; */   /* just for testing purposes  */
+        margin: auto;
+        width:min-content;
+        align-content: center;
+        text-align: center;
+        line-height: 3;
 
-    display: block;
-    margin:auto auto;
-    /* background-color: #eeaf03; */
+    }
+
+    .button{
+
+    
+   
     background-color:transparent;
     color: #fdf2d3;
-    border-color: #fdf2d3;
+    border: #fdf2d3;
     padding: 10px 20px;
     text-align: center;
     font-size: 15px;
     font-family: Helvetica;
     font-weight: 100;
     -webkit-transition-duration: 0.3s;
+    text-decoration: none;
  
 
     
 
     }
 
-    button:hover{
+    .button:hover{
 
     
         background-color: #101010;
