@@ -1,0 +1,89 @@
+*{
+
+box-sizing: border-box; /* include padding and border in all elements total width & height  */
+font-family: sans-serif;
+
+}
+
+
+/* centers all the content on the page */
+/* div for the entire <body>  */
+#page {
+    max-width: 1000px;  
+    margin: 0 auto;
+}
+
+
+/* adjusts leading and type size  */
+p, li {
+    font-size: 0.875em;
+    line-height: 1.6;
+}
+
+
+/* draws line under headers */
+h1, h2 {
+    font-family: serif;
+    border-bottom: 1px solid #a2a9b1;
+    font-weight: normal;
+    overflow: hidden; 
+}
+
+h1 {
+    margin-bottom: .2em;
+}
+
+
+/* styling the box */
+#info {
+    text-align: center;
+    width: 250px;
+    border: 1px solid #a2a9b1;
+    border-spacing: 3px;
+    background-color: #f8f9fa;
+    color: black;
+    margin: 0.5em 0 0.5em 1em;
+    padding: 0.2em;
+    float: right;
+    clear: right;
+    font-size: 75%;
+}
+
+
+
+/* imgs are width of box  */
+#info img {
+    max-width: 100%; 
+} 
+
+
+/* styling text within box table     */
+#info th, #info td {
+    vertical-align: top;
+    text-align: left;
+    padding-top: 2px; 
+}
+
+/* take away link styling (underline)  */
+a { 
+    text-decoration: none;
+}
+
+
+/* adds the little box after links that are not a part of wiki  */
+a[href^="http"]:after {
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f35d";
+    padding-left: 3px;
+    font-size: 90%;
+  }
+
+  a[href^="http://en.wikipedia"]:after {
+    content: none;
+  } 
+  
+
+
