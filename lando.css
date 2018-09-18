@@ -70,7 +70,8 @@ div.under{
 
     display: block;
     margin:auto auto;
-    background-color: #eeaf03;
+    /* background-color: #eeaf03; */
+    background-color:transparent;
     color: #fdf2d3;
     border-color: #fdf2d3;
     padding: 10px 20px;
