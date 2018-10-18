@@ -7,7 +7,7 @@
 body{
 
     /* Photo by Joanna Kosinska on Unsplash */
-background-image:url(imgs/bkgd_ylw.png);
+/* background-image:url(imgs/bkgd_ylw.png); */
 background-color: #eeaf03;
 
 }
@@ -16,9 +16,10 @@ background-color: #eeaf03;
 div.logo img{
 display: block;
 box-sizing: border-box;
-max-width: 120px;
+max-width: 150px;
 margin-left: auto;
 margin-right: auto;
+margin-top: 50px; 
 
 
 }
@@ -36,6 +37,7 @@ div.over{
     margin-left: 38vw;  /* vw = viewport width. makes text position relative */
     position:absolute;
     
+    
 
 }
 
@@ -52,6 +54,7 @@ div.under{
      /* margin-left: 530px; DID NOT WORK RELATIVE TO VIEWPORT SIZE*/
      margin-left: 37vw;  /* vw = viewport width. makes text position relative */
      margin-top:-5px;
+    
     
 
     
