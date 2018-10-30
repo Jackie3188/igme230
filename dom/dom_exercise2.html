@@ -58,6 +58,26 @@ footer2.innerHTML = "© 20XX by Ima Student"
 document.body.appendChild(footer2);
 footer2.style.textAlign = "center";
 
+// 8 - get a reference to the official bob ross site list item
+
+let targetListItem = document.querySelector("li a[href*='bobross.com']").parentNode;
+
+// 9 - create a new list item 
+
+let newListItem = document.createElement("li");
+    newListItem.innerHTML = "<a href='https://www.youtube.com/channel/UCxcnsr1R5Ge_fbTu5ajt8DQ'>Bob Ross YouTube Channel</a>";
+
+// 10 - insert the new list item into the existing list, before the target item
+    
+let unorderedList = document.querySelector("ul");
+    unorderedList.insertBefore(newListItem,targetListItem);
+
+ // 11 - Delete a footer
+ 
+document.body.removeChild(document.querySelector("footer"))
+
+
+
     </script>
 </body>
 
