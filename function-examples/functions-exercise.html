@@ -44,33 +44,95 @@
     <script>
         "use strict";
 
-        let colors = ["pink", "blue", "yellow"]; // add some colors
-        let movies = ["The Princess Bride", "Good Will Hunting", "Breakfast Club"]; // add some movies
+        let colors = ["pink", "blue", "yellow"]; // add favorite colors
+        let movies = ["The Princess Bride", "Good Will Hunting", "Breakfast Club"]; // add favorite movies
 
+// ---------- This code can be cleaner, so we will incorporate the createList function ---------- //
 
-// let listElement = document.createElement("li");
-let orderedList = document.querySelector("#colorslist");
+// COLORS LIST
 
+// let color of colors
+// i = value of colors in array
 for (let i = 0; i < colors.length; i++){
-    if(i<(3)){
 
-        // calls out the individual list items
+        // testing to make sure it calls out the individual list items
         console.log(colors[i]);
 
+        // create new list item
         let listElement = document.createElement("li");
-            listElement.innerHTML = "(colors[i])"
 
+        // assign value to new list item
+            listElement.innerHTML = colors[i];
+
+        // (for function you will pass orderedList in)
+        let orderedList = document.querySelector("#colorsList");
+
+
+        // use appendChild() method to add listElements to #colorList element.
          orderedList.appendChild(listElement);   
         
 
     }
 
 
+    //MOVIES LIST
+
+    // let movie of movies
+// i = value of movies in array
+for (let i = 0; i < movies.length; i++){
+
+// testing to make sure it calls out the individual list items
+console.log(movies[i]);
+
+// create new list item
+let listElement = document.createElement("li");
+
+// assign value to new list item
+    listElement.innerHTML = movies[i];
+
+// (for function you will pass orderedList in)
+let orderedList = document.querySelector("#moviesList");
+
+
+// use appendChild() method to add listElements to #colorList element.
+ orderedList.appendChild(listElement); 
 }
 
 
+
+
+//  // i = value of item from array
+//  for(let i = 0; i < 3; i++){
+
+// //let a variable = color array
+// let colorOrderedList = document.querySelector("#colorsList");
+// //let a variable = movie array
+// let movieOrderedList = document.querySelector("#moviesList");
+// //let variable = color[i]
+// let colorItem = colors[i];
+// //let variable = movie[i]
+// let movieItem = movies[i];
+// // use createList function...
+// createList(colorItem, colorOrderedList);
+// createList(movieItem, movieOrderedList);
+
+//  }  
+
+
+// }
+
+// // ---------- This code can be cleaner, so we will incorporate the createList function ---------- //
+
+
+// // replace 2 existing loops with 2 calls to this function
+
+// // pass in the listItem you are referencing and its corrosponding array
 // function createList(listElement,array){
-//     // you write the rest
+
+// //if listElement belongs to #colorsList, then add it to color array
+// //if listElement belongs to #moviesList, then add it to the movies array
+// array.appendChild(listElement);
+
 // }
 
 

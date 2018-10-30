@@ -41,9 +41,28 @@
 </div>
 
 <script>
-/* Write your code here! */
+// MY CODE STARTS HERE //
 
-let colorOptions = document.querySelectorAll("radio");
+// how to select the radio buttons?
+// what do they all share in common? NAME = colorGroup
+
+
+//4 variables :
+	// select radio buttons
+	let buttons = document.querySelectorAll("input[name = 'colorGroup']");  
+	// response div doc query selector #info
+	let response = document.querySelector("#info");
+	// select legend
+	let legend = document.querySelector("#legend");
+	// selsct submit button #colorButton
+	let submit = document.querySelector("#colorButton");
+	
+// assign event listener to each of the buttons, 
+// have listener change HTML elements by changing value of items selected
+
+
+// gets us the list items of radio buttons by calling out their shared NAME
+let colorOptions = document.querySelectorAll('input[name = "colorGroup"]');
 
 
 </script>
