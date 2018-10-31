@@ -49,91 +49,84 @@
 
 // ---------- This code can be cleaner, so we will incorporate the createList function ---------- //
 
-// COLORS LIST
-
-// let color of colors
-// i = value of colors in array
-for (let i = 0; i < colors.length; i++){
-
-        // testing to make sure it calls out the individual list items
-        console.log(colors[i]);
-
-        // create new list item
-        let listElement = document.createElement("li");
-
-        // assign value to new list item
-            listElement.innerHTML = colors[i];
-
-        // (for function you will pass orderedList in)
-        let orderedList = document.querySelector("#colorsList");
 
 
-        // use appendChild() method to add listElements to #colorList element.
-         orderedList.appendChild(listElement);   
+// // COLORS LIST
+
+// // let color of colors
+// // i = value of colors in array
+// for (let i = 0; i < colors.length; i++){
+
+//         // testing to make sure it calls out the individual list items
+//         console.log(colors[i]);
+
+//         // create new list item
+//         let listElement = document.createElement("li");
+
+//         // assign value to new list item
+//             listElement.innerHTML = colors[i];
+
+//         // (for function you will pass orderedList in)
+//         let orderedList = document.querySelector("#colorsList");
+
+
+//         // use appendChild() method to add listElements to #colorList element.
+//          orderedList.appendChild(listElement);   
         
 
-    }
+//     }
 
 
-    //MOVIES LIST
+//     //MOVIES LIST
 
-    // let movie of movies
-// i = value of movies in array
-for (let i = 0; i < movies.length; i++){
+//     // let movie of movies
+// // i = value of movies in array
+// for (let i = 0; i < movies.length; i++){
 
-// testing to make sure it calls out the individual list items
-console.log(movies[i]);
+// // testing to make sure it calls out the individual list items
+// console.log(movies[i]);
 
-// create new list item
-let listElement = document.createElement("li");
+// // create new list item
+// let listElement = document.createElement("li");
 
-// assign value to new list item
-    listElement.innerHTML = movies[i];
+// // assign value to new list item
+//     listElement.innerHTML = movies[i];
 
-// (for function you will pass orderedList in)
-let orderedList = document.querySelector("#moviesList");
+// // (for function you will pass orderedList in)
+// let orderedList = document.querySelector("#moviesList");
 
 
-// use appendChild() method to add listElements to #colorList element.
- orderedList.appendChild(listElement); 
+// // use appendChild() method to add listElements to #colorList element.
+//  orderedList.appendChild(listElement); 
+// }
+
+
+// ---------- This code can be cleaner, so we will incorporate the createList function ---------- //
+
+
+
+
+
+// pass in the listItem you are referencing and its corrosponding array
+let movieList = document.querySelector("#moviesList");
+let colorList = document.querySelector("#colorsList");
+
+function createList(listElement,array){
+// for every value of the array
+for(let i = 0; i < array.length; i++){
+// create list item 
+let listItem = document.createElement("li");
+// list item is every icrememnted index within array
+listItem.innerHTML = array[i];
+// append list items into list element (which will be calling the HTML ol)
+listElement.appendChild(listItem);
 }
 
+}
 
-// with function now
-
-//  // i = value of item from array
-//  for(let i = 0; i < 3; i++){
-
-// //let a variable = color array
-// let colorOrderedList = document.querySelector("#colorsList");
-// //let a variable = movie array
-// let movieOrderedList = document.querySelector("#moviesList");
-// //let variable = color[i]
-// let colorItem = colors[i];
-// //let variable = movie[i]
-// let movieItem = movies[i];
-// // use createList function...
-// createList(colorItem, colorOrderedList);
-// createList(movieItem, movieOrderedList);
-
-//  }  
-
-
-// }
-
-// // ---------- This code can be cleaner, so we will incorporate the createList function ---------- //
-
-
-// // replace 2 existing loops with 2 calls to this function
-
-// // pass in the listItem you are referencing and its corrosponding array
-// function createList(listElement,array){
-
-// //if listElement belongs to #colorsList, then add it to color array
-// //if listElement belongs to #moviesList, then add it to the movies array
-// array.appendChild(listElement);
-
-// }
+// replace 2 existing loops with 2 calls to this function
+createList(movieList, movies);
+createList(colorList, colors);
 
 
     </script>
