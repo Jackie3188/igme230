@@ -41,6 +41,7 @@
 </div>
 
 <script>
+
 // MY CODE STARTS HERE //
 
 // what needs to happen:
@@ -52,7 +53,6 @@
 	//2c the legend element should desplay in the color of your choice
 
 
-
 //4 variables :
 	// select radio buttons
 	// what do they all share in common? NAME = colorGroup
@@ -60,22 +60,31 @@
 	// response div doc query selector #info
 	let response = document.querySelector("#info");
 	// select legend
-	let legend = document.querySelector("#legend");
+	let legend = document.querySelector("legend");
 	// selsct submit button #colorButton
 	let submit = document.querySelector("#colorButton");
-	 
 
-	 //functions
+	let currentColor; 
 
- //when button is clicked, initiate response in info box
- //when button is clicked value will show up in info box
+	// iterate through button options
+	for (let i = 0; i < buttons.length; i++) {
+		// when the current button is clicked the currentColor will equal the value of that button 
+		buttons[i].onchange = function() {
+			currentColor = this.value;
+			// change the text to match chosen color
+			response.innerHTML = "Your current color is " + currentColor + ".";
+			};
+	}
 
+	//when the submit button is clicked
+	submit.onclick = function() {
+		// change innerHTML of response
+		response.innerHTML = "Your FINAL CHOICE is " + currentColor + ".";
+		// change color of text at top of box
+		legend.style.color = currentColor;
 
- //when submit is pressed info HTML will change
- //when submit is pressed legend color will change
-
-// assign event listener or handler to each of the buttons usinf for loop:
-
+	};
+ 
 
 
 
