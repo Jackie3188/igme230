@@ -1,0 +1,428 @@
+
+
+html { 
+  background: url(images/bkgd.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* <----------------> HOME PAGE <----------------> */
+
+/*burger menu*/
+
+label.burger {
+  width: 80px;;
+  height: 70px;
+  /* background: #8b0285; */
+  display: block;
+  margin-top:20px;
+  /* changes mouse appearance */
+  cursor:pointer;
+}
+
+
+label.burger input {
+  display: none;
+}
+
+nav {
+
+  position: fixed;
+  top: -100%;
+  background: #470144;
+ opacity: .8;
+  width: 100%;
+  height: 100%;
+  transition: top .5s cubic-bezier(0.910, 0.005, 0.170, 1.005);
+  ;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+input:checked + nav {
+  top:0;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+    border-radius: 5px;
+  text-decoration: none;
+  /* background: #3a4c51; */
+  padding: 20px;
+  margin: 10px;
+  min-width: 200px;
+font-family: 'Open Sans', sans-serif;
+}
+
+
+.menuicon, .menuicon:before, .menuicon:after{
+/* burger line width */
+  width:60px;
+  height:5px;
+  background:#fff;
+  border-radius:2px;
+  position:relative;
+  margin-top:10px;
+  margin-left:10px;
+}
+
+.menuicon:before{
+  content:"";
+  display:block;
+  position:absolute;
+  margin-top:20px;
+  margin-left:0;
+}
+
+.menuicon:after{
+  content:"";
+  display:block;
+  position:absolute;
+  margin-top:40px;
+  margin-left:0;
+}
+
+/*end burger*/
+
+.opener{
+   text-align:center;
+    color: #fafafa;
+    font-size: 6vw;
+    margin: 0,auto;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+
+.homehead{
+    box-sizing: border-box;
+    width: 50%;
+    max-width: 800px;
+    height:200px;
+    overflow: auto;
+    padding: 10px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    
+}
+
+/*#415c73*/
+
+
+hr{
+    width:50%;
+    
+}
+
+.bar{
+    box-sizing: border-box;
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    word-spacing: 60px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ .bar a{
+        text-decoration: none;
+        font-size: 18px;
+        color: #fafafa;
+    }
+.bar a:hover{
+        color:#8b0285;
+    }
+.bar a:active{
+        color:#080f16;
+    }
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+.foot{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color:#dbdbdb;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+/* <----------------> BIO PAGE <---------------->*/
+
+
+.maddyimg{
+    background-color: aquamarine;
+    height: 130px;
+    width: 130px;
+    border-radius: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
+    box-sizing: border-box;
+}
+
+.maddyo{
+    display: block;
+    max-width: 100%;
+    margin-bottom: 70px;
+    border-radius: 100px;
+}
+
+
+.bioinfo{
+    background-color: #42464f;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: #e2e2e2;
+}
+
+.social{
+    width:26%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    align-content: center; 
+}
+
+.fb{
+     background-color:#7a7044;
+    height: 70px;
+    width: 70px;
+    border-radius: 300px;
+    border:none;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    float: left;
+    margin-left:20px;
+    margin-right: 20px;  
+}
+
+.fbphoto{
+     display: block;
+    max-width: 100%;
+    margin-bottom: 70px;
+    border-radius: 100px;
+}
+
+.tumblr{
+     background-color: #7a7044;
+    height: 70px;
+    width: 70px;
+    border-radius: 300px;
+    border:none;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    float: left;
+     margin-left:20px;
+    margin-right: 20px;
+    
+}
+
+.tumblrphoto{
+     display: block;
+    max-width: 100%;
+    margin-bottom: 70px;
+    border-radius: 100px;
+}
+
+.insta{
+     background-color: #7a7044;
+    height: 70px;
+    width: 70px;
+    border-radius: 300px;
+    border:none;
+    box-sizing: border-box;
+    float: left;
+     margin-left:20px;
+    margin-right: 20px;
+}
+
+.igphoto{
+     display: block;
+    max-width: 100%;
+    margin-bottom: 70px;
+    border-radius: 100px;
+}
+
+/*clearfix*/
+.social:after { 
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+
+
+/* <----------------> ART PAGE <---------------->*/
+
+h2{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #fafafa;
+    font-size: 40px;
+    margin-top:40px;
+}
+
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
+}
+li:nth-child(1) {
+}
+li:nth-child(2) {
+}
+li:nth-child(3) {
+}
+li:nth-child(4) {
+}
+li:nth-child(5) {
+}
+li:nth-child(6) {
+}
+li:nth-child(7) {
+}
+li:nth-child(8) {
+}
+li:nth-child(9) {
+}
+li:nth-child(10) {
+}
+li:nth-child(11) {
+}
+li:nth-child(12) {
+}
+li:nth-child(13) {
+}
+li:nth-child(14) {
+}
+li:nth-child(15) {
+}
+li:nth-child(16) {
+}
+li:nth-child(17) {
+}
+* {box-sizing:border-box;}
+
+img {
+  display: block;
+  width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.2rem;
+}
+
+/*media queries*/
+
+@media (min-width:320px){
+ 
+    .switch{
+        visibility: visible;
+    }
+    .bar{
+        visibility: hidden;
+    }
+    
+    .opener{
+        font-size: 12vw;
+        border:none;
+    }
+    
+    hr{
+        visibility: hidden;
+    }
+    
+    
+   /* <-------> BIO PAGE <------->*/ 
+    .bioinfo{
+    width: 80%;
+}
+
+    
+.maddyimg{
+    margin-top: 10px;
+}
+    
+    
+}
+
+@media (min-width:460px){
+    
+    .opener{
+        font-size: 9vw;
+        border:none;
+    }    
+
+}
+
+@media (min-width:640px){
+    
+    .switch{
+        visibility: hidden;
+    }
+    .bar{
+        visibility: visible;
+    }
+    
+    .opener{
+        font-size:7vw;
+    }
+    
+    hr{
+        visibility: visible;
+    }
+    
+     /* <-------> BIO PAGE <------->*/ 
+    .bioinfo{
+    width: 60%;
+}
+    
+    .maddyimg{
+  margin-top: 30px;
+}
+    
+}
+
+@media (min-width:960px){
+      
+    .opener{
+        font-size: 6vw;
+    }
+    
+     /* <-------> BIO PAGE <------->*/ 
+    .bioinfo{
+    width: 40%;
+}
+}
+
+
