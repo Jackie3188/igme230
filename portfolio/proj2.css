@@ -231,6 +231,30 @@ h2{
     margin:0 auto;
 }
 
+/* <-----------------> ANIMATION PAGE <----------------->*/
+main{
+
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+
+    width: 100%
+    max-width: 95vw;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+img{
+
+display: block;
+width: 100%;
+
+#page
+
 /* --------------- media queries --------------- */
 
 /* PHONE */
@@ -261,6 +285,7 @@ h2{
      #works{
          visibility: hidden;
      }
+
 }
 
 /* slightly larger phone */
