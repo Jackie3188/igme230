@@ -1,11 +1,14 @@
 
 
 html, body { 
-  /* background: url(images/bkgd.jpg) no-repeat center center fixed; */
-  background-color: #1b1b1b;
   width: 100%; 
   height: 100%;
+
+  /* parallax background */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
+
 
 /* <----------------> HOME PAGE <----------------> */
 
@@ -160,32 +163,52 @@ hr{
         color:#080f16;
     }
 
-.foot{
-    /* background-color: blueviolet; */
-    padding: 20px;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color:#c5c5c5;
-    text-align: center;
-    font-size: 12px;
-}
 
 
 
 /* <----------------> BIO PAGE <---------------->*/
 
-/* Quote at the top of the page */
+/* Quotes at the top of the page */
 h2{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Dancing Script', cursive;
     color: #fafafa;
-    font-size: 34px;
+    font-size: 40px;
     text-align: center;
     margin-top:50px;
-
+    margin-bottom: 50px;
 }
 
+/* div with picture and bio */
+#bio{
+    /* background-color: #fafafae5; */
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    line-height: 40px;
+    color: #1b1b1b;
+}
+
+/* center image */
+#bio img{
+    display: block;
+    margin: 0 auto;
+}
+
+#text{
+   padding:10px;
+    margin: 0 auto;
+    width: 50%;
+    color: #fafafa
+}
+#contact{
+
+    padding:10px;
+     margin: 0 auto;
+     width: 100%;
+     color: #fafafa;
+     font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    line-height: 40px;
+}
 /* <----------------> ART PAGE <---------------->*/
 
 
@@ -210,6 +233,11 @@ h2{
     hr{
         visibility: hidden;
     }
+    #text{
+        padding:10px;
+         margin: 0 auto;
+         width: 100%;
+     }
 }
 
 /* slightly larger phone */
@@ -219,6 +247,11 @@ h2{
         font-size: 9vw;
         border:none;
     }
+    #text{
+        padding:10px;
+         margin: 0 auto;
+         width: 80%;
+     }
 }
 
 /* TABLET */
@@ -238,7 +271,12 @@ h2{
     /* show decorative line */
     hr{
         visibility: visible;
-    }   
+    } 
+    #text{
+        padding:10px;
+         margin: 0 auto;
+         width: 60%;
+     }
 }
 
 /* DESKTOP */
