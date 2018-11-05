@@ -245,16 +245,24 @@ main{
     margin-bottom: .5rem;
     margin-left:auto;
     margin-right:auto;
-
 }
 
-img{
+main img{
 
 display: block;
 width: 100%;
+}
 
-#page
+#pageinfo{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    line-height: 40px;
+    color: #fafafa;
 
+    padding:10px;
+    margin: 0 auto;
+    width: 70vw;
+}
 /* --------------- media queries --------------- */
 
 /* PHONE */
