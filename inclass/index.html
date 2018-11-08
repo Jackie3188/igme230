@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+
+    <style>
+        html, body{
+            margin:0;
+            padding: 0;
+            background-color: green;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{
+            background-color: green;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #mygrid{
+            display:grid;
+            /* each box - 200x200 px */
+            grid-template-rows: 200px 200px 200px;
+            grid-template-columns: 200px 200px 200px;
+            width: 90%;
+            height: 100vh;
+            max-width: 1000px;
+        }
+        #mygrid div{
+            display: flex;
+            /* center items horizontally */
+            justify-content: center;
+            /* center items vertically */
+            align-items: center;
+            /* just to see */
+            background-color: pink;
+            border: 1px dotted black;
+        }
+        .headerbar{
+            /* Make the cell expand or 'span' over multiple colms */
+            grid-column: 1fr/4fr;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div id="mygrid">
+    <div class ="headerbar">Cell 1</div>
+    <div>Cell 2</div>
+    <div>Cell 3</div>
+    <div>Cell 4</div>
+    <div>Cell 5</div>
+    <div>Cell 6</div>
+    <div>Cell 7</div>
+    
+
+</div>
+
+
+
+
+</body>
+
+
+
+</html>

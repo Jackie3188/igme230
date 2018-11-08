@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery1</title>
+    <!-- IMPORTANT!!! Calls out J query library -->
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+
+        #navpanel{
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+        }
+        
+        
+        </style>
+</head>
+<body>
+
+<button id="show">Show</button>  <button id="hide">Hide</button>
+<div id="navpanel">
+    <ul>
+        <li>Hello</li>
+        <li>Hola</li>
+        <li>Bonjour</li>
+    </ul>
+</div>
+
+<script>
+
+    /* "$" calls out J query code */
+    /* method "click" will call this function & this funciton will hide the navpanel */
+    $("#hide").click(function() {
+        $("#navpanel").hide(500); 
+    });
+    /* method "click" will call this function & this funciton will show the navpanel */
+    $("#show").click(function() {
+        $("#navpanel").show(300);
+    });
+
+</script>
+
+</body>
+</html>
