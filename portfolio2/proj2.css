@@ -1,0 +1,34 @@
+/* CSS */
+
+
+/* flex container for nav itmes  */
+#navigation {
+
+/* make children flex items  */
+display: flex;
+/* make column  */
+flex-direction: column;
+/* restrain the container to viewport w & h */
+width:20vw;
+height: 60vh;
+/* give room on top */
+margin-top:25px;
+/* for clarity  */
+background-color: blueviolet;
+border-style: solid;
+border-color: black;
+/* align to left side of container */
+align-items: flex-start;
+/* space items evenly  */
+justify-content: space-evenly;
+
+}
+
+/* all nav items */ 
+.logo,
+.pageLink,
+.workPage {
+
+    background-color: darkgoldenrod;
+    flex-flow: column wrap;
+}
