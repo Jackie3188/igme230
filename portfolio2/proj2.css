@@ -1,43 +1,86 @@
 /* CSS */
 
 
+/* ---------- N A V I G A T I O N  ---------- */
+
+
 /* flex container for nav itmes  */
 #navigation {
 
 /* make children flex items  */
 display: flex;
 /* make column  */
-flex-flow: column wrap;
+flex-direction: column;
+flex-wrap: nowrap;
 /* restrain the container to viewport w & h */
-width:20vw;
-height: 70vh;
+height: 75vh;
 /* give room on top */
-margin-top:25px;
+margin-top:0px;
+/* align to left side of container */
+align-items: stretch;
+/* space items evenly  */
+justify-content: space-between;
+/* keep nav position in place while scrolling */
+position: fixed;
+padding: 0 20px 20px 20px;
+
 /* for clarity  */
 background-color: blueviolet;
 border-style: solid;
 border-color: black;
-/* align to left side of container */
-align-items: flex-start;
-/* space items evenly  */
-justify-content: space-evenly;
-/* keep nav position in place while scrolling */
-position: fixed;
 
 }
 
 /* all nav items */ 
+a,
 .pageLink,
 .workPage {
-    font-size: 20px;
+    /* stylize text */
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 18px;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+
+    /* for clarity */
     background-color: darkgoldenrod;
-    padding: 3px;
-    flex-flow: column wrap;
-    width: 100%;
-    font-family: 'Nunito', sans-serif;
 }
 
-.workPage{
-    font-size: .8em;
+/* interaction with links */
+a:hover, a:active{
+    font-weight: 600;
+}
+
+
+/* indent and shrink art pages */
+#indent{
+    font-size: .9rem;
     padding-left: 30px;
+}
+
+/* center logo */
+.logo{
+align-self: center;
+justify-self: flex-start;
+width: 78%
+
+}
+
+
+/* ---------- I M A G E   C H A N G E R ---------- */
+
+.profileWrapper {
+    /* background-color: brown; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    width: 100vw;
+    
+    
+}
+
+
+.peeky{
+    width: 400px;
+    align-self: center;
 }
