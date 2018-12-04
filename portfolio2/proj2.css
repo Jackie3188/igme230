@@ -7,10 +7,10 @@
 /* make children flex items  */
 display: flex;
 /* make column  */
-flex-direction: column;
+flex-flow: column wrap;
 /* restrain the container to viewport w & h */
 width:20vw;
-height: 60vh;
+height: 70vh;
 /* give room on top */
 margin-top:25px;
 /* for clarity  */
@@ -21,14 +21,23 @@ border-color: black;
 align-items: flex-start;
 /* space items evenly  */
 justify-content: space-evenly;
+/* keep nav position in place while scrolling */
+position: fixed;
 
 }
 
 /* all nav items */ 
-.logo,
 .pageLink,
 .workPage {
-
+    font-size: 20px;
     background-color: darkgoldenrod;
+    padding: 3px;
     flex-flow: column wrap;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.workPage{
+    font-size: .8em;
+    padding-left: 30px;
 }
