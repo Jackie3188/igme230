@@ -24,6 +24,7 @@ justify-content: space-evenly;
 position: fixed;
 padding: 0 20px 20px 20px;
 /* stylize with dropshadow */
+background-color: #ffffff;
 box-shadow: 10px 15px 30px #d4d4d4;
 
 }
@@ -38,9 +39,6 @@ a,
     font-size: 16px;
     padding: 5px;
     font-family: 'Raleway', sans-serif;
-
-    /* for clarity */
-    /* background-color: darkgoldenrod; */
 }
 
 /* interaction with links */
@@ -49,19 +47,15 @@ a:hover, a:active{
 }
 
 
-/* indent and shrink art pages */
+/* indent and shrink art-specific pages */
 #indent{
-    text-decoration: none;
     font-size: .9rem;
     color: #FFCC00;
-
-    /* padding-left: 30px; */
 }
 
 /* center logo */
 .logo{
 align-self: center;
-justify-self: flex-start;
 width: 50%
 
 }
