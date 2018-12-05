@@ -1,6 +1,5 @@
 /* CSS */
 
-
 /* ---------- N A V I G A T I O N  ---------- */
 
 
@@ -20,15 +19,12 @@ margin-top:0px;
 /* align to left side of container */
 align-items: stretch;
 /* space items evenly  */
-justify-content: space-between;
+justify-content: space-evenly;
 /* keep nav position in place while scrolling */
 position: fixed;
 padding: 0 20px 20px 20px;
-
-/* for clarity  */
-/* background-color: blueviolet;
-border-style: solid;
-border-color: black; */
+/* stylize with dropshadow */
+box-shadow: 10px 15px 30px #d4d4d4;
 
 }
 
@@ -39,7 +35,7 @@ a,
     /* stylize text */
     text-decoration: none;
     color: #2a2a2a;
-    font-size: 18px;
+    font-size: 16px;
     padding: 5px;
     font-family: 'Raleway', sans-serif;
 
@@ -57,16 +53,16 @@ a:hover, a:active{
 #indent{
     text-decoration: none;
     font-size: .9rem;
-    color: #bababa;
+    color: #FFCC00;
 
     /* padding-left: 30px; */
 }
 
 /* center logo */
 .logo{
-align-self: flex-start;
+align-self: center;
 justify-self: flex-start;
-width: 78%
+width: 50%
 
 }
 
@@ -76,15 +72,46 @@ width: 78%
 .pictureContainer {
     /* background-color: brown; */
     display: flex;
-    flex-flow: row wrap;
+    /* centers image */
     justify-content:center;
-    width: 100vw;
-    
-    
+    /* fill to size of container */
+    width: 100vw;  
 }
-
 
 #peeky{
     width: 400px;
     align-self: center;
+}
+
+/* ----- B I O ----- */
+
+#bio{
+    /* for clarity */
+    /* background-color: chocolate; */
+    /* make text responsive */
+    max-width: 600px;
+    /* styling */
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-family:'Raleway', sans-serif;
+    line-height: 2rem;
+    text-align: left;
+}
+
+/* Hello, I'm Jackie */
+p.hello::first-line{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+
+footer{
+    /* background-color: coral; */
+    text-align: center;
+    padding: 5px 5px 5px 0px;
+    margin: 130px auto 0 auto;
+    font-family:'Raleway', sans-serif;
 }

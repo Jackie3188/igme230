@@ -12,11 +12,11 @@ myImage.onclick = function(){
     //mySrc will be equal to source string for img
     var mySrc = myImage.getAttribute('src');
     //if the src string is = to image 1 when clicked
-    if(mySrc === 'images/peek1.jpg'){
+    if(mySrc === 'images/peek1.png'){
         //change to image 2
-        myImage.setAttribute('src', 'images/peek2.jpg');
+        myImage.setAttribute('src', 'images/peek2.png');
     } else {
         //otherwise remain image 1
-        myImage.setAttribute('src', 'images/peek1.jpg');
+        myImage.setAttribute('src', 'images/peek1.png');
     }
 }
