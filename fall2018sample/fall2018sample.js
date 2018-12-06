@@ -48,12 +48,17 @@ myMenu1.onclick = function(){
 //SETTING the html of content 
 //does not actually change when selector is toggled
 
+// locate the selector
+var select = document.querySelector("select");
+
 // when window loads
 window.onload = function(){
     // grab the content.txt file & if it does that successfully
     $.ajax({url: "content1.txt", success: function(data){
         //replace html of content ID to html of content1.txt
         document.querySelector("option[value='content1.txt']").value = data;
+        // onload text set
+        document.querySelector('#content').innerHTML = select.value;
     }});
     $.ajax({url: "content2.txt", success: function(data){
         //replace html of content ID to html of content2.txt
@@ -61,12 +66,13 @@ window.onload = function(){
     }});
 };
 
-// locate the selector
-var select = document.querySelector("select");
+
 //when the selector option is changed
 select.onchange = function (){
     // change the html of the content to equal the value of the selector
     $("#content").html(select.value);
 }
+
+//on load have the current #content value = 
 
 

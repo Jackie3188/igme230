@@ -44,11 +44,9 @@ Your Formatting
     width: 90vw;
     max-width: 1200px; 
     /* fills space available in flex container  */
-    display: flex;
+    display: grid;
     flex-direction: column;
     min-height: 100vh;
-
-
 }
 
 /* center header & footer text */
@@ -57,6 +55,7 @@ header, footer{
     justify-content: center;
 }
 
+/* stling menu items */
 .menuitem1, .menuitem2{
     background-color: #ffffff;
     margin:0px;
@@ -82,5 +81,15 @@ li{
 /* ----- M O B I L E -----  */
 @media only screen and (max-width: 600px){
 
+    #wrapper {
+        /* centers container in viewport */
+        margin: 0 auto;
+        width: 100vw;
+        max-width: 1200px; 
+        /* fills space available in flex container  */
+        display: grid;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
 }
