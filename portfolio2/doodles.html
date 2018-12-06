@@ -32,8 +32,28 @@
     <div class = "workPage"><a href="doodles.html" id = "indent">Doodles</a></div>
 </div>
 
-    <!-- G R I D of images -->
+<!-- Navigation burger -->
+     <!-- CODE SOURCE: https://www.w3schools.com/howto/howto_css_menu_icon.asp -->
+     <div id = "burgerBox" onclick="myFunction(this)">
+        <div id = "icon">
+            <div class = "line1"></div>
+            <div class = "line2"></div>
+            <div class = "line3"></div>
+        </div>
+        <nav>
+            <div class = "link"><a href = "index.html"> About me</a></div>
+            <div class = "link"><a href="contact.html">Contact</a></div>
+            <div class = "link"><a href = "resume.html">Resume</a></div>
+            <div class = "link"><a href = "work.html">Work</a></div>
+        </nav>
+    </div>
 
+    <div id = "pageDetails">
+         <h1>Doodles</h1>
+         <p>Doodling is a freeing exercise that everyone should do daily, regardless of one's artistic abilities. Here are some of my favorite #dailydoodles I've created in adobe Photoshop and Illustrator</p>
+    </div>
+
+    <!-- G R I D of images -->
     <div id = "doodleContainer">
         <img class = "doodle" src = "images/doodles/balloons.jpg">
         <img class = "doodle" src = "images/doodles/baseball-03.png">
@@ -65,10 +85,8 @@
         <img class = "doodle" src = "images/doodles/trashcan.jpg">
         <img class = "doodle" src = "images/doodles/tree.jpg">
         <img class = "doodle" src = "images/doodles/vase-frame-02.png">
-       
-
-
     </div>
   
+    <script type = "text/javascript" src = "burger.js"></script> 
     </body>
     </html>

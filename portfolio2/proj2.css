@@ -169,6 +169,18 @@ footer{
     width: 80%;
 }
 
+#pageDetails{
+    /* background-color: #d4d4d4; */
+    font-family:'Raleway', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    margin-top:70px;
+    width:60vw;
+    line-height: 1.5rem;
+    
+}
+
             /* ------------------------------ Media Query ------------------------------ */
 
 /* ----- T A B L E T ----- */
@@ -219,8 +231,9 @@ footer{
     display: block;
     /* change cursor on hover */
     cursor: pointer;
+    position: fixed;
 } 
-/* change */
+
 nav{
     display: none;
     /* background-color: blueviolet; */
