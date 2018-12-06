@@ -1,5 +1,9 @@
 /* CSS */
 
+/* -------------------- about me page -------------------- */
+
+
+
 /* ---------- N A V I G A T I O N  ---------- */
 
 
@@ -134,5 +138,47 @@ footer{
     padding:0px;
     justify-self: flex-start;
 }
+
+}
+
+/* ----- M O B I L E ----- */
+@media only screen and (max-width: 730px){
+
+#navigation{
+    visibility: hidden;
+}
+
+.logo{
+    width: 80px;
+    position: absolute;
+    margin-top:20px;
+}
+
+#peeky{
+    margin-top:50px;
+}
+
+}
+
+/* -------------------- doodle page -------------------- */
+
+#doodleContainer{
+    /* background-color: aquamarine; */
+    padding: 5rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: .5rem;
+
+   max-width: 60vw;
+   margin: 30px auto;
+    
+
+}
+
+.doodle{
+background-color: cadetblue;
+display: block;
+width: 80%;
+
 
 }
