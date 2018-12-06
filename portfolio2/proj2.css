@@ -1,10 +1,10 @@
 /* CSS */
 
-/* -------------------- about me page -------------------- */
+                        /* -------------------- about me page -------------------- */
 
 
 
-/* ---------- N A V I G A T I O N  ---------- */
+/* ---------- N A V I G A T I O N  B A R  ---------- */
 
 
 /* flex container for nav itmes  */
@@ -64,6 +64,42 @@ width: 50%
 
 }
 
+/* ---------- N A V I G A T I O N   B U R G E R ----------  */
+    /* CODE SOURCE: https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
+#burgerBox {
+    display: none;
+    /* change cursor on hover */
+    cursor: pointer;
+} 
+.line1, .line2, .line3 {
+    /* length */
+    width: 34px;
+    /* thickness */
+    height: 4px;
+    /* make ends round */
+    border-radius: 60px;
+    background-color: #FFCC00;
+    /* space between*/
+    margin: 6px 0;
+    /* delay appearing on page load */
+    transition: 0.4s;
+}
+
+    .change .line1 {
+         -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+         transform: rotate(-45deg) translate(-9px, 6px) ;
+     } 
+    
+     /* Fade out the second bar */
+     .change .line2 {
+         opacity: 0;
+     }
+    
+     /* Rotate last bar */
+     .change .line3 {
+         -webkit-transform: rotate(45deg) translate(9px, -6px) ;
+         transform: rotate(45deg) translate(-9px, -6px) ;
+     }
 
 /* ---------- I M A G E   C H A N G E R ---------- */
 
@@ -114,6 +150,27 @@ footer{
     font-family:'Raleway', sans-serif;
 }
 
+                        /* -------------------- Doodle page -------------------- */
+
+#doodleContainer{
+    /* background-color: aquamarine; */
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+
+    max-width: 60vw;
+    margin: 30px auto;
+}
+
+.doodle{
+    background-color: cadetblue;
+    display: block;
+    width: 80%;
+}
+
+            /* ------------------------------ Media Query ------------------------------ */
+
 /* ----- T A B L E T ----- */
 @media only screen and (max-width: 1000px){
 
@@ -158,27 +215,14 @@ footer{
     margin-top:50px;
 }
 
+#burgerBox {
+    display: block;
+    /* change cursor on hover */
+    cursor: pointer;
+} 
+
+nav{
+    display: none;
 }
-
-/* -------------------- doodle page -------------------- */
-
-#doodleContainer{
-    /* background-color: aquamarine; */
-    padding: 5rem;
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   grid-gap: .5rem;
-
-   max-width: 60vw;
-   margin: 30px auto;
-    
-
-}
-
-.doodle{
-background-color: cadetblue;
-display: block;
-width: 80%;
-
 
 }

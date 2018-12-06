@@ -21,8 +21,7 @@
 
     <!-- Navigation side bar -->
     <div id = "navigation">
-        <div class = "logo"><img src="images/logo.svg" alt="my logo">
-        </div>
+        <div class = "logo"><a href = "index.html"><img src="images/logo.svg" alt="my logo"></a></div>
         <div class = "pageLink"><a href = "index.html"> About me</a></div>
         <div class = "pageLink"><a href="contact.html">Contact</a></div>
         <div class = "pageLink"><a href = "resume.html">Resume</a></div>
@@ -30,6 +29,22 @@
         <div class = "workPage"><a href= "posters.html" id = "indent">Posters</a></div>
         <div class = "workPage"><a href = "models.html" id = "indent">Models</a></div>
         <div class = "workPage"><a href="doodles.html" id = "indent">Doodles</a></div>
+    </div>
+
+    <!-- Navigation burger -->
+     <!-- CODE SOURCE: https://www.w3schools.com/howto/howto_css_menu_icon.asp -->
+    <div id = "burgerBox" onclick="myFunction(this)">
+        <div id = "icon">
+            <div class = "line1"></div>
+            <div class = "line2"></div>
+            <div class = "line3"></div>
+        </div>
+        <nav>
+            <div class = "about"><a href = "index.html"> About me</a></div>
+            <div class = "contact"><a href="contact.html">Contact</a></div>
+            <div class = "resume"><a href = "resume.html">Resume</a></div>
+            <div class = "work"><a href = "work.html">Work</a></div>
+        </nav>
     </div>
 
     <!-- Image of me-->
@@ -46,7 +61,8 @@
        </div> 
 
     <!-- Link to javascript file -->
-    <script type = "text/javascript" src = "main.js"></script>    
+    <script type = "text/javascript" src = "main.js"></script> 
+    <script type = "text/javascript" src = "burger.js"></script>   
 
     <footer>
         <div><p>Copyright &copy; 2018 Jackie Lando </p></div>
