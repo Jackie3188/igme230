@@ -1,0 +1,164 @@
+<!-- MY QUERY week 12b -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jackie's JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        /* CSS code here */
+        #wrapper{
+            /* background-color: darksalmon; */
+            display:flex;
+            align-content: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 90vw;
+        }
+        #page{
+            display: grid;
+            grid-template-rows: 1fr 1fr 10fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        header{
+            grid-column: 1 / 4;
+            /* background-color: cadetblue; */
+            display:flex;
+            justify-content: center;
+        }
+        nav{
+            grid-column: 1;
+            /* background-color: blueviolet; */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        ul{
+            list-style: none;
+        }
+        article{
+            grid-column: 2 / 4;
+            display: flex;
+            padding: 2rem;
+            /* background-color: cornsilk; */
+            flex-grow: 1;
+        }
+        p.info{
+            width:80%;
+        }
+        #menu{
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+            /* background-color: chocolate; */
+            
+        }
+        .menubox{
+            
+            background-color:beige;
+            padding: .7rem;
+        }
+        .submenu{
+            background-color: lightgray;
+            padding: .6rem;
+            display: none;
+        
+        }
+        footer{
+            background-color:dimgray;
+            grid-column: 1 / 4;
+            align-self: flex-end;
+            display: flex;
+            justify-content: center;
+            height: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+<div id = "wrapper">
+    <div id = "page">
+        <header>
+            <h1>Hello there! Click Me!</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li class = "pageLink"><p> About me</p></li>
+                <li class = "pageLink"><p>Contact</p></li>
+                <li class = "pageLink"><p>Resume</p></li>
+                <li class = "pageLink"><p>Work</p></li>
+                </ul> 
+            </nav>
+
+        <article>
+            <p class ="info">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </article>
+
+
+        <div id = "menu">
+            <div class = "menubox">Click the Menu item</div>
+        <div class = "submenu">Sub Menu item</div>
+        </div>
+
+        <footer>
+            <p>I'm a foot</p>
+        </footer>
+    </div>
+</div>
+
+
+    <script>
+        // JAVASCRIPT code here
+
+        // when user clicks the M E N U, the display of submenu will reveal itself
+        //variable selector for menubox (to click)
+        var myMenu = document.querySelector(".menubox");
+        //variable selector for submenu item (to reveal)
+        var subItem = document.querySelector(".submenu");
+        //toggle true false value
+        toggleMenu = false;
+
+        myMenu.onclick = function(){
+            //short hand for switching true false values
+            toggleMenu = !toggleMenu;
+            if(toggleMenu){
+                // subItem.style.display = "block";
+                $(subItem).slideDown();
+            }
+            else{
+                // subItem.style.display = "none";
+                $(subItem).slideUp();
+            }
+        }
+
+        //F A D E in text for header
+
+        //header text
+        //on page load the text will fade in
+        var headText = document.querySelector("header");
+        var toggleHeader = true;
+        headText.onclick = function(){
+            toggleHeader = !toggleHeader;
+            if(toggleHeader){
+            $("h1").fadeOut("slow", function(){
+                //completed
+                console.log("I'm fading");
+            });
+        }
+        else{
+            $("h1").fadeIn("slow", function(){
+                //completed
+                console.log("I'm appearing");
+            });
+
+        }
+        }
+    
+    </script>
+</body>
+</html>
+
