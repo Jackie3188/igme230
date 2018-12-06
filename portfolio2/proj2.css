@@ -80,7 +80,7 @@ width: 50%
     border-radius: 60px;
     background-color: #FFCC00;
     /* space between*/
-    margin: 6px 0;
+    margin: 6px 10px;
     /* delay appearing on page load */
     transition: 0.4s;
 }
@@ -225,9 +225,13 @@ nav{
     display: none;
     /* background-color: blueviolet; */
     flex-direction: column;
-    margin-top: 40px;
-    height: 160px;
-    justify-content: space-between;
+    height: 200px;
+    /* justify-content: space-between; */
+}
+
+.link{
+    padding:25px
+    
 }
 
 }
