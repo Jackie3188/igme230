@@ -84,18 +84,18 @@ width: 50%
     /* delay appearing on page load */
     transition: 0.4s;
 }
-
+    /* rotate line 1 */
     .change .line1 {
          -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
          transform: rotate(-45deg) translate(-9px, 6px) ;
      } 
     
-     /* Fade out the second bar */
+     /* Fade out line 2 */
      .change .line2 {
          opacity: 0;
      }
     
-     /* Rotate last bar */
+     /* Rotate line 3 */
      .change .line3 {
          -webkit-transform: rotate(45deg) translate(9px, -6px) ;
          transform: rotate(45deg) translate(-9px, -6px) ;
@@ -223,6 +223,11 @@ footer{
 
 nav{
     display: none;
+    /* background-color: blueviolet; */
+    flex-direction: column;
+    margin-top: 40px;
+    height: 160px;
+    justify-content: space-between;
 }
 
 }

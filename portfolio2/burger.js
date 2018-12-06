@@ -11,22 +11,13 @@ function myFunction(x) {
     toggle = !toggle
 
     if(toggle){
-        links.style.display = "none";
+        // links.style.display = "none";
+        $("nav").slideUp();
     }
     else{
-        links.style.display = "block";
+        // links.style.display = "flex";
+        $("nav").slideDown();
     }
 }
 
-
-// burger.onclick = function(){
-//     toggle = !toggle
-
-//     if(toggle){
-//         links.style.display = "none";
-//     }
-//     else{
-//         links.style.display = "block";
-//     }
-// }
 
