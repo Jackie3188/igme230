@@ -42,11 +42,42 @@ Your Formatting
     /* centers container in viewport */
     margin: 0 auto;
     width: 90vw;
-    max-width: 1200px; 
+    max-width: 1200px;
+    /* min-height: 100vh;  */
     /* fills space available in flex container  */
     display: grid;
-    flex-direction: column;
-    min-height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    /* flex-direction: column; */
+    
+}
+
+header{
+    grid-row: 1;
+    height:4rem;
+    grid-column: 1 /  4;
+}
+aside, article, nav {
+    min-height: 80vh;
+}
+aside{
+    grid-row: 2;
+    grid-column-start: 1;
+}
+article{
+    grid-row: 2;
+    grid-column: 2 / 3;
+}
+nav{
+    grid-row: 2;
+    grid-column-start: 3;
+    width: 200px;
+    justify-self: flex-end;
+}
+footer{
+    grid-row: 3;
+    height:3rem;
+    grid-column: 1 / 4;
+
 }
 
 /* center header & footer text */
@@ -88,8 +119,36 @@ li{
         max-width: 1200px; 
         /* fills space available in flex container  */
         display: grid;
+        grid-template-columns: repeat(3 1fr);
         flex-direction: column;
         min-height: 100vh;
+    }
+    header{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: 1;
+    }
+    nav{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row:2;
+        justify-self: center;
+        width: 100%;
+    }
+    article{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: 3;
+    }
+    aside{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row:4;
+    }
+    footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: 5;
     }
 
 }
