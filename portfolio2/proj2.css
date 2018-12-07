@@ -1,8 +1,5 @@
 /* CSS */
 
-                        /* -------------------- about me page -------------------- */
-
-
 
 /* ---------- N A V I G A T I O N  B A R  ---------- */
 
@@ -101,6 +98,9 @@ width: 50%
          transform: rotate(45deg) translate(-9px, -6px) ;
      }
 
+
+                        /* -------------------- about me page -------------------- */
+
 /* ---------- I M A G E   C H A N G E R ---------- */
 
 .pictureContainer {
@@ -150,6 +150,13 @@ footer{
     font-family:'Raleway', sans-serif;
 }
 
+                        /* -------------------- Contact page -------------------- */
+
+#phone{
+    width: 400px;
+    align-self: center;
+}
+
                         /* -------------------- Doodle page -------------------- */
 
 #doodleContainer{
@@ -164,7 +171,7 @@ footer{
 }
 
 .doodle{
-    background-color: cadetblue;
+    background-color: lightpink;
     display: block;
     width: 80%;
 }
@@ -178,9 +185,39 @@ footer{
     margin-top:70px;
     width:60vw;
     line-height: 1.5rem;
-    
 }
 
+                        /* -------------------- 3D Model page -------------------- */
+
+#modelContainer{
+    /* background-color: aquamarine; */
+    display: grid;
+    margin: 0 auto;
+    margin-left: 160px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    }
+
+    .model{
+        background-color: lightpink;
+        width:100%;
+    }
+
+                            /* -------------------- Poster page -------------------- */
+
+#posterContainer{
+    /* background-color: aquamarine; */
+    display: grid;
+    margin: 0 auto;
+    margin-left: 160px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    }
+
+    .poster{
+        background-color: lightpink;
+        width:100%;
+    }
             /* ------------------------------ Media Query ------------------------------ */
 
 /* ----- T A B L E T ----- */
@@ -209,6 +246,7 @@ footer{
 }
 
 }
+
 
 /* ----- M O B I L E ----- */
 @media only screen and (max-width: 730px){
@@ -246,5 +284,24 @@ nav{
     padding:25px
     
 }
+
+/* ----- 3D Model page -----  */
+#modelContainer{
+    /* background-color: aquamarine; */
+    display: grid;
+    margin: 0 auto;
+    margin-left: 160px;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    }
+/* ----- poster page -----  */
+    #posterContainer{
+        /* background-color: aquamarine; */
+        display: grid;
+        margin: 0 auto;
+        margin-left: 160px;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        }
 
 }
