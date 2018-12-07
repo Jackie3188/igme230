@@ -65,9 +65,18 @@ width: 50%
     /* CODE SOURCE: https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
 #burgerBox {
     display: none;
-    /* change cursor on hover */
+    /* change cursor when it hovers */
     cursor: pointer;
+    padding: 5px;
 } 
+
+nav{
+    background-color: #ffffff;
+}
+
+.link{
+    background-color: #ffffff;
+}
 .line1, .line2, .line3 {
     /* length */
     width: 34px;
@@ -304,11 +313,21 @@ nav{
 /* ----- poster page -----  */
     #posterContainer{
         /* background-color: aquamarine; */
-        display: grid;
+        /* display: grid;
         margin: 0 auto;
         margin-left: 160px;
         grid-template-columns: 1fr;
-        grid-gap: 15px;
+        grid-gap: 15px; */
+
+
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 0 auto;
         }
+
+    #pageDetails{
+        width: 80vw;
+    }
 
 }
