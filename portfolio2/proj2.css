@@ -68,6 +68,7 @@ width: 50%
     /* change cursor when it hovers */
     cursor: pointer;
     padding: 5px;
+    /* background-color: #ffffff; */
 } 
 
 nav{
@@ -75,7 +76,7 @@ nav{
 }
 
 .link{
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 .line1, .line2, .line3 {
     /* length */
@@ -285,13 +286,13 @@ footer{
     /* change cursor on hover */
     cursor: pointer;
     position: fixed;
+    background-color: #ffffff;
 } 
 
 nav{
     display: none;
     /* background-color: blueviolet; */
     flex-direction: column;
-    height: 200px;
     /* justify-content: space-between; */
 }
 
