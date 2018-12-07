@@ -212,12 +212,18 @@ footer{
     margin-left: 160px;
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
+    max-width: 90%;
     }
 
     .poster{
         background-color: lightpink;
         width:100%;
     }
+    /* change all work headers */
+    h1{
+        font-family: 'Dancing Script', cursive; 
+    }
+    
             /* ------------------------------ Media Query ------------------------------ */
 
 /* ----- T A B L E T ----- */
@@ -294,6 +300,7 @@ nav{
     grid-template-columns: 1fr;
     grid-gap: 15px;
     }
+
 /* ----- poster page -----  */
     #posterContainer{
         /* background-color: aquamarine; */
