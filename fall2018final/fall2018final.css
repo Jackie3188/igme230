@@ -37,7 +37,7 @@ Your Formatting
 
 /* wrapper */
 #mygrid{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 
     margin:0 auto;
     display:grid;

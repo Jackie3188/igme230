@@ -1,12 +1,41 @@
 // JS
 
+
+// in class review session 
+
+
 //when clicking on .top menu item
 $(".top").click( function(){
 //display submenu item following this menu item
 $(this).next(".list").slideToggle();
-})
+});
 
+/* Targeting the ARTICLE not h2!!!!! */
 
+// Load the default article into the default article element
+$("article").load("article0.txt");
+
+// when you click on radio button with name "story"
+$("input[name = 'story']").click(function(){
+    // get the value of that button (hold it in variable "Article")
+    let article = $(this).val();
+    console.log(article);
+    //load that value into article element
+    $("article").load(article);
+});
+
+// increment count when button is clicked
+//count is currently 0
+let count = 0;
+// console.log(count);
+//when button is clicked
+$("#click").click(function(){
+    // increment count var
+    count++;
+    console.log(count);
+    //change HTML of button text to = count
+    $("#clickcount").html(count);
+});
 
 // M Y   C O D E -----------------------
 
