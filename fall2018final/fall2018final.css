@@ -45,8 +45,8 @@ Your Formatting
     max-width:1000px;
     min-height: 100vh;
 
-    grid-template-rows: 75px 1fr 1fr 30px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 75px 30px 1fr 1fr 50px;
+    grid-template-columns: 1fr 2fr;
 }
 header{
     background-color: lightpink;
