@@ -47,13 +47,17 @@ Your Formatting
 
     grid-template-rows: 75px 30px 1fr 1fr 50px;
     grid-template-columns: 1fr 2fr;
+    /* naming the rows / columns */
+    grid-template-areas:
+    "a a"
+    "b b"
+    "c d"
+    "e d"
+    "f f";
 }
 header{
     background-color: lightpink;
-
-    grid-column: 1 / 3;
-    grid-row:1;
-    height: 75px;
+    grid-area: a;
 
     display:flex;
     justify-content: center;
@@ -61,30 +65,38 @@ header{
     }
     
     nav{
+    
+    grid-area: b;
     background-color: lavenderblush;
-    grid-row:2;
-    grid-column: 2;
-    height:30px;
 
     display:flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     position: relative;
     
     }
 
-    p.top{
+    .top{
         width: 6rem;
         background-color: #ccc;
-        align-self: center;
+        margin:0px;
     }
 
-    ul.list{
-        list-style: none;
-        /* display: none; */
+    .list{
+        list-style-type: none;
+        background-color: #ddd;
+        margin: 0px;
+        padding: 0px;
+        display: none;
+        /* KEEPS MENU FROM GETING PUSHED!!!  */
+        position: absolute;
+        /* make it above other content */
+        z-index: 2;
+        width: 6rem;
+        
     }
 
-    li{
+    .list li{
         padding:.25rem;
         background-color: #ddd;
     }
@@ -92,28 +104,31 @@ header{
 
     
     article{
+        grid-area: d;
    background-color: lightcyan;
-   grid-column: 1;
-   grid-row:2 / 4;
+  
     }
     
     /*  */ take up max space
     aside{
+    
+        grid-area: c;
        background-color: lightblue;
-       grid-row:3;
-       grid-column:2;
        flex-grow: 1;
     }
     
     footer{
+        grid-area: f;
         background-color: lightpink;
-        grid-row: 4;
-        grid-column: 1 / 3;
         height:30px;
 
         display:flex;
         justify-content: center;
-        align-self: flex-end;
+        
+    }
+
+    #extracredit{
+        grid-area: e;
     }
 
 
@@ -121,32 +136,44 @@ header{
 @media only screen and (max-width: 600px){
 #mygrid{
     background-color: bisque;
-   display:flex;
-   flex-direction:column;
+   grid-template-rows: 75px 30px auto auto auto 30px ;
+   /* one column using all available space */
+   grid-template-columns: 1fr;
+   /* naming the rows */
+   grid-template-areas: 
+   "a"
+   "b"
+   "c"
+   "d"
+   "e"
+   "f"
+   ;
+   width: 100vw;
 }
 
 header{
-grid-row: 1;
-height: 75px;
+
+grid-area: a;
 }
 
 nav{
-grid-row:2;
-height: 30px;
+grid-area: b;
 }
 
 article{
-grid-row:auto;
-height:auto;
+grid-area: c;
 }
 
 aside{
-    grid-row:auto;
-    height:auto;
+    grid-area: d;
+}
+
+#extracredit{
+    grid-area: e;
 }
 
 footer{
-grid-row:5;
-height: 30px;
+grid-area: f;
 }
+
 }
