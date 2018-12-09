@@ -375,7 +375,7 @@ footer{
 
 
 /* ----- M O B I L E ----- */
-@media only screen and (max-width: 730px){
+@media only screen and (max-width: 580px){
 
 #navigation{
     visibility: hidden;
@@ -389,6 +389,7 @@ footer{
 
 #peeky{
     margin-top:50px;
+    width: 100vw;
 }
 
 #burgerBox {
