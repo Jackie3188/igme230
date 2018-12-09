@@ -187,17 +187,6 @@ footer{
     width: 80%;
 }
 
-#pageDetails{
-    /* background-color: #d4d4d4; */
-    font-family:'Raleway', sans-serif;
-    display: flex;
-    flex-flow: column wrap;
-    margin: 0 auto;
-    margin-top:70px;
-    width:60vw;
-    line-height: 1.5rem;
-}
-
                         /* -------------------- 3D Model page -------------------- */
 
 #modelContainer{
@@ -230,9 +219,24 @@ footer{
         background-color: lightpink;
         width:100%;
     }
+
+    /* ------------- page descriptions & headers ------------- */
+
     /* change all work headers */
     h1{
         font-family: 'Dancing Script', cursive; 
+    }
+
+    #pageDetails{
+        /* background-color: #d4d4d4; */
+        font-family:'Raleway', sans-serif;
+        display: flex;
+        flex-flow: column wrap;
+        margin: 0 auto;
+        margin-top:70px;
+        width:60vw;
+        max-width: 700px;
+        line-height: 1.5rem;
     }
     
             /* ------------------------------ Media Query ------------------------------ */
