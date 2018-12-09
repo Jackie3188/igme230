@@ -203,7 +203,7 @@ footer{
         width:100%;
     }
 
-                            /* -------------------- Poster page -------------------- */
+                         /* -------------------- Poster page -------------------- */
 
 #posterContainer{
     /* background-color: aquamarine; */
@@ -220,15 +220,67 @@ footer{
         width:100%;
     }
 
+                         /* -------------------- Resume page -------------------- */
+
+    #resumeContainer{
+        width: 60vw;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-left: 190px;
+        margin-top: 50px;
+    }
+    
+    .resume{
+        width: 100%;
+    }
+
+                             /* -------------------- Work page -------------------- */
+    
+    /* flex the container */
+    #workContainer{
+        max-width: 1200px;
+        width: 85vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        margin-left: 140px;
+        margin-top:80px;
+    }
+
+     /* the art page card  */
+     #artPage{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* the image */
+    .pagecover{
+       width: 100%;
+    }
+
+    .pagecover:hover{
+        box-shadow: 10px 15px 30px #d4d4d4;
+    }
+
+    .title{
+        align-self: center;
+    }
+
+
+
     /* ------------- page descriptions & headers ------------- */
 
     /* change all work headers */
     h1{
         font-family: 'Dancing Script', cursive; 
+        line-height: 2.5rem;
+    }
+
+    p{
+        font-family:'Raleway', sans-serif;
     }
 
     #pageDetails{
-        /* background-color: #d4d4d4; */
         font-family:'Raleway', sans-serif;
         display: flex;
         flex-flow: column wrap;
@@ -295,6 +347,28 @@ footer{
     width: 80vw;
     max-width: 1000px;
     margin: 0px auto;
+}
+
+/* ----- resume page ----- */
+#resumeContainer{
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.resume{
+    width: 100%;
+}
+
+/* ----- resume page ----- */
+#workContainer{
+    max-width: 1200px;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin: 0 auto;
+    margin-top:70px;
 }
 
 }
@@ -372,5 +446,14 @@ nav{
         width: 80vw;
     }
 
+/* ----- work page ----- */
+#workContainer{
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin: 0 auto;
+    margin-top:50px;
+}
 
 }
