@@ -270,6 +270,11 @@ footer{
 
     /* ------------- page descriptions & headers ------------- */
 
+    .selected {
+        font-weight: 800;
+        color:#ff5a6d;
+    }
+
     /* change all work headers */
     h1{
         font-family: 'Dancing Script', cursive; 
@@ -285,7 +290,6 @@ footer{
         display: flex;
         flex-flow: column wrap;
         margin: 0 auto;
-        margin-top:70px;
         width:60vw;
         max-width: 700px;
         line-height: 1.5rem;
