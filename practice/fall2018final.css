@@ -1,0 +1,160 @@
+/*****************
+General Formatting
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside {
+    padding: .5rem;
+}
+
+#extracredit {
+    width: 75%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+
+/**************
+Your Formatting
+
+/* D E S K T O P */
+#mygrid{
+    display: grid;
+    width: 90vw;
+    max-width:1000px;
+    min-height:100vh;
+    margin:0 auto;
+    grid-template-columns: 1fr, 2fr;
+    grid-template-rows: 75px, 30px, 1fr, 2fr, 50px;
+    grid-template-areas:
+    "a a " /* header header */
+    "b b"  /* nav nav */
+    "c d" /* aside article*/
+    "e f" /* extracredit - */
+    "g g" /* foot foot */
+    ;
+}
+
+header{
+    grid-area: a;
+    background-color: lightpink;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav{
+    grid-area: b;
+    background-color: lavenderblush;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+aside{
+    grid-area: c;
+    background-color: lightblue;
+}
+
+article{
+    grid-area: d;
+    background-color: lightcyan;
+
+}
+
+#extracredit{
+    grid-area: e;
+
+}
+
+footer{
+    grid-area: g;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top{
+    width: 6rem;
+    background-color: #ccc;
+    margin-bottom:0px;
+    position: relative;
+}
+
+.list{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    background-color: #ddd;
+    display: none;
+    position: absolute;
+    width: 6rem;
+}
+
+li{
+    padding-left: .25rem;
+}
+
+/* m o b i l e */
+@media only screen and (max-width: 600px){
+
+#mygrid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px, 30px, auto, auto, auto, 30px;
+    grid-template-areas: 
+    "a" /* header */
+    "b" /* nav */
+    "c" /* article */
+    "d" /* aside */
+    "e" /* counter */
+    "f" /* footer */
+    ;
+    width: 100vw;
+}
+
+header{
+    grid-area: a;
+}
+nav{
+    grid-area: b;
+
+}
+article{
+    grid-area: c;
+
+}
+aside{
+    grid-area: d;
+
+}
+#extracredit{
+    grid-area: e;
+
+}
+footer{
+    grid-area: f;
+
+}
+
+}
