@@ -1,0 +1,162 @@
+/*****************
+General Formatting
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside {
+    padding: .5rem;
+}
+
+#extracredit {
+    width: 75%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+
+/**************
+Your Formatting
+**************/
+
+/* D E S K T O P */
+
+#mygrid{
+    width: 90vw;
+    max-width: 1000px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 75px, 50px, 1fr, 1fr, 30px;
+    grid-template-columns: 1fr, 2fr;
+    grid-template-areas: 
+"a a"
+"b b"
+"c d"
+"e f"
+"g g"
+    ;
+}
+
+header{
+    background-color: lightpink;
+    grid-area: a;
+}
+
+nav{
+    background-color: lavenderblush;
+    grid-area: b;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+aside{
+    background-color: lightblue;
+    grid-area: c;
+}
+
+article{
+    background-color: lightcyan;
+    grid-area: d;
+}
+
+#extracredit{
+    grid-area: e;
+}
+
+footer{
+    background-color: lightpink;
+    grid-area: g;
+}
+
+header,
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top{
+    background-color: #ccc;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.list{
+    background-color: #ddd;
+    list-style: none;
+    margin-top: 0px;
+    padding: 0px;
+    width: 6rem;
+    position: absolute;
+    display: none;
+}
+
+li{
+    padding-left: .25rem;
+}
+
+
+
+/* M O B I L E */
+@media only screen and (max-width: 600px){
+
+#mygrid{
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px, 50px, auto, auto, auto, 30px;
+    grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f"
+    ;
+}
+
+header{
+    grid-area: a;
+}
+
+nav{
+    grid-area: b;  
+}
+
+article{
+    grid-area: c;
+}
+
+aside{
+    grid-area: d;
+}
+
+#extracredit{
+    grid-area: e;
+}
+
+footer{
+    grid-area: f;
+}
+
+}
