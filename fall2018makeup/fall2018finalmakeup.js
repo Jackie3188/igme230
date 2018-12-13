@@ -8,20 +8,30 @@ $(".menu").click(function(){
 
 
 
-// This is what I tried doing, & nothing worked ....
+//I wanted / tried to do it THIS WAY but nothing worked ....
+
+// S T O R I E S
 
 //get story to load text on page load
+//this is working
 $("#story").load("story0.txt");
 
 //when I click on #stories option
 $("#stories").click(function(){
     console.log("changed!");
     //variable to hold ID of this 
+    // THIS IS THE PROBLEM BUT WHY?!?!?!
     var storytxt = $(this).next("li").id;
+    //does not recognize var storytxt 
     console.log(storytxt);
     //make this ID value = #story text
     $("#story").load(storytxt);
 });
+
+
+
+
+// I wanted to do it THIS WAY but nothing was working ...
 
 //change color
 //when color option is chosen
@@ -58,6 +68,7 @@ $("[id = lightpink]").click(function(){
 
 });
 
+//select id of element
 $("[id = lightsalmon]").click(function(){
     //change background color of source
     $("#source").css("background-color", "lightsalmon");
