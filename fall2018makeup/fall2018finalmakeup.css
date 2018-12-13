@@ -113,9 +113,43 @@ li:hover{
 
 @media only screen and (max-width: 600){
 
-#pagegrid{
+    #pagegrid{
+        width: 100vw;
+        margin: 0 auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        height: 80px;
+        order: 1;
+    }
+    #story{
+       height: auto;
+       order: 2;
+    }
+    #source{
+        height: auto;
+        order: 3;
+    }
+    #extracredit{
+        height: auto;
+        order: 4;
+    }
+    nav{
+        height: auto;
+        order: 5;
+    }
+    
+    footer{
+        height: 30px;
+        order: 5;
+    }
+    }
+
+/* #pagegrid{
     width: 100vw;
-    max-width: 1100px;
+    margin: 0 auto;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -144,4 +178,4 @@ nav{
     grid-area:e;
 }
 
-}
+} */
